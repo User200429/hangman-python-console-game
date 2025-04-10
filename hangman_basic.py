@@ -1,11 +1,21 @@
 import random
 
 # List of words
-a =["MAN","WOMANN","GAAIN"]
+# List of words
+hangman_words = [
+    "apple", "tiger", "chair", "house", "plant",
+    "bread", "phone", "water", "cloud", "smile",
+    "jungle", "window", "bottle", "rocket", "camera",
+    "flower", "monkey", "desert", "planet", "pencil",
+    "oxygen", "cryptic", "zephyr", "awkward", "rhythm",
+    "iceberg", "galaxy", "python", "tsunami", "voyage"
+]
+
 
 # selecting random word
-ran = random.randint(0,2)
-word = a[ran]
+# ran = random.randint(0,len(hangman_words))
+# word = hangman_words[ran]
+word = random.choice(hangman_words)
 # print(word)
 
 #Welcoming the user
