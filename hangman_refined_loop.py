@@ -94,7 +94,7 @@ coun = 0
 
 while coun < chance: 
     #Taking input
-    choice = input("\n Enter The Guess : ").upper()
+    choice = input("\n Enter The Guess : ").lower()
 
     # # Comparing if element entered in list
     
