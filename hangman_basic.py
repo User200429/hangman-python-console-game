@@ -1,7 +1,6 @@
 import random
 
 # List of words
-# List of words
 hangman_words = [
     "apple", "tiger", "chair", "house", "plant",
     "bread", "phone", "water", "cloud", "smile",
