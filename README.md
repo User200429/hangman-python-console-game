@@ -1,4 +1,3 @@
-# hangman-python-console-game
 # Hangman – A Console-Based Word Guessing Game in Python
 
 ## 🎮 Hangman – A Console-Based Word Guessing Game
@@ -13,19 +12,53 @@ This is a simple implementation of the classic Hangman game using Python. The ga
 - Real-time display of guessed letters and progress
 - User-friendly input and output
 - Multiple versions showcasing incremental improvements:
-  - `hangman_basic.py`: Basic version
-  - `hangman_with_multiple_letters.py`: Introduces multiple letter detection
-  - `hangman_refined_loop.py`: Improved multiple letter logic
-  - `hangman_final_tweaks.py`: Tweaked indexing and game logic
+  - `hangman_basic.py`: Basic implementation (only first match revealed)
+  - `hangman_with_multiple_letters.py`: Displays all matching letters in one guess
+  - `hangman_refined_loop.py`: Cleaner, loop-optimized version for better efficiency
+  - `hangman_final_tweaks.py`: Final revision with minor logical improvements
+
+---
+
+### 📁 Version Descriptions:
+
+#### `hangman_basic.py`
+This is the **initial version** of the Hangman game. It selects a random word and displays underscores for each letter.
+
+- Only the **first occurrence** of a guessed letter is revealed.
+- Simple gameplay with 6 wrong guess attempts.
+- ASCII-based hangman visualization.
+
+#### `hangman_with_multiple_letters.py`
+Improves the logic to reveal **all occurrences** of the guessed letter in one go.
+
+- Iterates through the word to reveal every match.
+- Better user experience than the basic version.
+- Code has redundant steps but shows enhanced logic.
+
+#### `hangman_refined_loop.py`
+More efficient and readable version.
+
+- Uses a refined loop and indexing strategy.
+- All matches shown correctly with less overhead.
+- Clean separation of logic for better maintainability.
+
+#### `hangman_final_tweaks.py`
+Final version with subtle logic improvements.
+
+- Adds a `break` after each match to control repeated reveals.
+- More readable structure, useful as a base for future upgrades.
 
 ---
 
 ### 🚀 How to Run:
 ```bash
-python try1.py
+python hangman_basic.py
 # or
-python try2.py
-# and so on...
+python hangman_with_multiple_letters.py
+# or
+python hangman_refined_loop.py
+# or
+python hangman_final_tweaks.py
 ```
 
 ---
@@ -44,4 +77,4 @@ This game is designed for educational purposes and console-based gameplay. Futur
 ---
 
 ### 👨‍💻 Author:
-Ghanashyam M Dinesh
+Your Name Ghanashyam M Dinesh
